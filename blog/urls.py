@@ -3,5 +3,5 @@ from django.urls import path
 
 urlpatterns = [
     path('',views.index,name='homepage'),
-    path('post/',views.single,name='single'),
+    path('post/<int:postid>',views.single,name='single'),
 ]
